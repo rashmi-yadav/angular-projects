@@ -46,3 +46,9 @@
   (confirm)="confirmDelete()"
 >
 </in-delete-product-modal>
+
+<in-product
+  *ngIf="productOpen"
+  [product]="selectedProduct"
+  (finish)="handleFinish($event)"
+></in-product>
